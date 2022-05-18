@@ -1,0 +1,62 @@
+{
+    "name": "@etsoo/task",
+    "version": "1.0.1",
+    "description": "TypeScript Etsoo extended tasks",
+    "main": "lib/cjs/index.js",
+    "module": "lib/mjs/index.js",
+    "types": "lib/mjs/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./lib/mjs/index.js",
+            "require": "./lib/cjs/index.js"
+        }
+    },
+    "sideEffects": false,
+    "scripts": {
+        "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
+        "format": "prettier --write src/**/*.ts",
+        "test": "jest"
+    },
+    "jest": {
+        "automock": false,
+        "testMatch": [
+            "<rootDir>/__tests__/**/*.ts"
+        ],
+        "testEnvironment": "jsdom",
+        "moduleFileExtensions": [
+            "js",
+            "ts",
+            "d.ts"
+        ],
+        "transform": {
+            ".+\\.ts$": "ts-jest"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ETSOO/TSTasks.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ETSOO/TSTasks/issues"
+    },
+    "homepage": "https://github.com/ETSOO/TSTasks#readme",
+    "keywords": [
+        "Task",
+        "TypeScript",
+        "ETSOO",
+        "SmartERP",
+        "司友云平台",
+        "青岛亿速思维",
+        "上海亿商"
+    ],
+    "author": "ETSOO",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/jest": "^27.5.1",
+        "jest": "^28.1.0",
+        "jest-environment-jsdom": "^28.1.0",
+        "ts-jest": "^28.0.2",
+        "typescript": "^4.6.4"
+    }
+}
