@@ -1,6 +1,6 @@
 {
     "name": "@etsoo/task",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "TypeScript Etsoo extended tasks",
     "main": "lib/cjs/index.js",
     "module": "lib/mjs/index.js",
